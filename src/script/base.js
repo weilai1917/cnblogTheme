@@ -287,9 +287,9 @@ function Base() {
                     if (ac === 'down') {
                         var docHeight    = $(document).height();
                         var windowHeight = $(window).height();
-                        tools.actScroll(docHeight - windowHeight, 2000)
+                        tools.actScroll(docHeight - windowHeight, 200)
                     } else {
-                        tools.actScroll(0, 2000)
+                        tools.actScroll(0, 200)
                     }
                 }
             }
@@ -773,7 +773,7 @@ function Base() {
         // 头图点击滚动到内容位置
         $('.scroll-down').click(function () {
             let endScroll;
-            endScroll = $('#home').offset().top + 10; tools.actScroll(endScroll, 1000);});
+            endScroll = $('#home').offset().top + 10; tools.actScroll(endScroll, 200);});
 
         // 设置右下角菜单
         timeIds.setHomeRightMenuTId = window.setInterval( bndongJs.addHomeRightMenu, 1000 );
