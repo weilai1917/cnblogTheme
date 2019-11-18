@@ -546,7 +546,7 @@ b {
 
 .Cal { /**日历容器table**/
     border: none;
-    color: #666;
+    color: rgb(187, 181, 181);
     width: 100%;
     font-size: 12px;
     font-family: arial;
@@ -588,12 +588,10 @@ b {
 
 .CalDayHeader {
     font-weight: bold;
-    background: #111;
     padding-bottom: 5px;
 }
 
 .CalTitle { /**日历年月头部样式**/
-    background: #6293bb;
     width: 100%;
     height: 30px;
     text-align: center;
@@ -603,7 +601,6 @@ b {
 }
 
 .CalTitle td {
-    background: #000;
     font-family: verdana;
     font-size: 12px;
     font-weight: bold
@@ -3258,6 +3255,10 @@ b {
     line-height: 20px;
 }
 
+.show-menu .menu{
+    background: url("https://gitee.com/weilai1917/cnblogTheme/raw/master/img/blackMagic.jpg") top center / 100% no-repeat rgb(0, 0, 0);
+}
+
 .introduce-box {
     width: 100%;
     position: absolute;
@@ -3274,7 +3275,7 @@ b {
     outline: none;
     cursor: pointer;
     /*background: #000 url(https://gitee.com/dbnuo/Cnblogs-Theme-SimpleMemory/raw/master/img/menu_bg.jpeg) 0 -195px no-repeat;*/
-    background: #000 url(https://gitee.com/dbnuo/Cnblogs-Theme-SimpleMemory/raw/master/img/me_top_bg.gif) center no-repeat;
+    /*background: #000 url(https://gitee.com/dbnuo/Cnblogs-Theme-SimpleMemory/raw/master/img/me_top_bg.gif) center no-repeat;*/
     background-size: 100%;
 }
 
@@ -3726,6 +3727,22 @@ blockquote p {
 #m-nav-list li {
     position: relative;
     overflow: hidden;
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+#m-nav-list li:before{
+    content: "";
+    background: none;
+}
+
+.icon-list li a:after{
+    content: "" !important;
+}
+
+.close-button::after, .close-button::before{
+    background:black !important;
 }
 
 /* ==========================================================================
@@ -3887,9 +3904,9 @@ body>meting-js, #aplayer {
     padding: 10px;
     height: 200px;
     position: relative;
-    background: #fff url(https://gitee.com/dbnuo/Cnblogs-Theme-SimpleMemory/raw/master/img/comment_bg.jpg) right -65px;
-    background-size: 250px;
-    background-repeat: no-repeat;
+    background: #fff url(https://gitee.com/weilai1917/cnblogTheme/raw/master/img/comment_img.png) right 0;
+    background-repeat: repeat-y;
+    background-position-y: -200px;
 }
 
 .commentbox_title {

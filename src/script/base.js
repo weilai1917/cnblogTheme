@@ -947,7 +947,7 @@ function Base() {
         } else {
             author = window.cnblogsConfig.blogUser;
         }
-        var str = 'Posted by ' + author + ' on ' + date;
+        var str = date; //'Posted by ' + author + ' on ' + 
         $('#articleInfo').append('<p class="article-info-text">'+str+'</p>');
     };
 
