@@ -90,7 +90,7 @@ if (initCheck()) {
     window.cnblogsConfigDefault = {
         GhUserName: 'weilai1917',
         GhRepositories: 'cnblogTheme',
-        GhVersions: 'v1.2.0',
+        GhVersions: 'v1.0',
         CnVersions: "",
         blogUser: "",
         blogAvatar: "",
