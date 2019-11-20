@@ -116,7 +116,8 @@ function Base() {
         timeIds.setMenuTopviewTId        = window.setInterval( setMenuData.setTopview, 1000 );
         timeIds.setMenuTopDiggPostsTId   = window.setInterval( setMenuData.setTopDiggPosts, 1000 );
         timeIds.setMenuRecentCommentsTId = window.setInterval( setMenuData.setRecentComments, 1000 );
-        window.setInterval( setMenuData.setCommentBack, 500 );
+        window.setInterval( setMenuData.setCommentBack, 200 );
+        window.setInterval( setMenuData.setFootBackScroll, 100 );
         setMenuData.setCustomData();
         // 设置菜单展开收缩
         $('.m-list-title-select').click(function(){ $(this).parents('.m-list-title').next('.m-icon-list').slideToggle(500) });
@@ -412,6 +413,7 @@ function Base() {
             menuTopDiggPosts   = $('#sb-topDiggPosts'),
             menuRecentComments = $('#sb-recentComments'),
             tbCommentBody      = $('#tbCommentBody');
+            tbFootBack         = $('.clouds');
 
         // 添加个人信息
         function setIntroduce() {
@@ -426,6 +428,15 @@ function Base() {
             tbCommentBody.css("background-position-y", yscroll + "px");            
             if (yscrolli++ > 5) {
                 yscrolli = 0;
+            }
+        }
+
+        var xscroll = 0;
+        function setFootBackScroll(){
+            var xscroll = 1 * scroll;
+            tbFootBack.css("background-position-y", xscroll + "px");       
+            if (xscroll++ > 2217) {
+                xscroll = 0;
             }
         }
 
